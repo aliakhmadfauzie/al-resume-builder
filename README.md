@@ -1,58 +1,33 @@
-# Al Resume Website
+# Al Resume Builder & Interactive Portfolio
 
-A modern, animation-driven personal portfolio / resume website built with **React 19**,
-**TypeScript**, **Vite 6**, and **Tailwind CSS 4**.
+[![React 19](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Motion](https://img.shields.io/badge/Motion-Fluid%20Animations-FF0055?style=for-the-badge&logo=framer&logoColor=white)](https://motion.dev)
 
-## Tech stack
+**Al Resume Builder** is an animation-driven personal portfolio and CV builder built with **React 19**, **TypeScript**, **Vite 6**, and **Tailwind CSS 4**. It combines silky smooth scroll-driven motion animations with autonomous AI agent validation workflows.
 
-- **React 19** (`react`, `react-dom`) — UI
-- **TypeScript 5.8** — type safety
-- **Vite 6** — build tool and dev server
-- **Tailwind CSS 4** (`@tailwindcss/vite`) — styling
-- **Motion** (`motion`) — animations / scroll effects
-- **Lucide React** — icons
-- **React Markdown** — renders article / resume content
-- **Express** — local dev API (webhooks)
-- **Google GenAI** (`@google/genai`) — AI features (via `GEMINI_API_KEY`)
-- **dotenv** — environment variables
+---
 
-## Getting started
+## 🌟 Key Capabilities
 
-Prerequisites: [Bun](https://bun.sh) (or npm) and Node.js.
+- **Fluid Motion Orchestration**: Reactive transitions, hover physics, and scroll-linked progress indicators powered by `motion`.
+- **Industrial Minimalist Aesthetics**: Ultra-clean typographic rhythm following strict WCAG 2.1 AA accessibility guidelines.
+- **AI Agent Automation**: Preconfigured `.github/agents` suite including automated accessibility auditors, performance inspectors, and browser testers.
+- **Dynamic Curriculum Vitae Generation**: Real-time structured resume preview with modular section reordering.
+
+---
+
+## 🚀 Getting Started
 
 ```bash
-# 1. Install dependencies
-bun install
-
-# 2. Configure environment
-cp .env.example .env
-# Fill in GEMINI_API_KEY and APP_URL
-
-# 3. Start the dev server
-bun run dev
+npm install
+npm run dev
+npm run build
 ```
 
-## Scripts
+---
 
-| Script             | Description                                        |
-|--------------------|----------------------------------------------------|
-| `bun run dev`      | Start Vite dev server on port 3000                 |
-| `bun run build`    | Production build to `dist/`                        |
-| `bun run preview`  | Preview the production build                       |
-| `bun run lint`     | Type-check with `tsc --noEmit`                     |
-| `bun run clean`    | Remove `dist/` and `server.js`                     |
-
-## Project structure
-
-- `src/` — application source (`App.tsx`, `main.tsx`, `types.ts`)
-- `src/components/` — UI components
-- `src/data/` — content data (`resumeData.ts`, `articlesData.ts`)
-- `.github/agents/` — custom Copilot agents (incl. `agent-orchestrator`)
-- `.github/skills/` — Copilot skills (incl. `agent-orchestrator` workflow)
-
-## Copilot orchestration
-
-This repo includes an **Agent Orchestrator** (`.github/agents/agent-orchestrator.agent.md`)
-plus the `agent-orchestrator` skill, which classify intent, delegate to specialist
-sub-agents, enforce skill ordering, and gate output on type safety, architecture,
-security, and performance standards. Invoke it via `@agent-orchestrator`.
+## 📄 License
+Authored by **Ali Akhmad Fauzie** ([@aliakhmadfauzie](https://github.com/aliakhmadfauzie)). MIT License.
